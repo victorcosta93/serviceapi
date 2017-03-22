@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel + React</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -49,7 +49,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .todo {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
@@ -57,6 +57,9 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                width: 50%;
+                margin: 0 auto;
+                text-align: left;
             }
 
             .m-b-md {
@@ -79,16 +82,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello World
+                    Bruno Alves da Silva
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                
+                <ul class="todo">
+                    <li>Documentação</li>
+                    <li>Interface publica</li>
+                    <li>Interface privada</li>
+                </ul>
             </div>
         </div>
     </body>
