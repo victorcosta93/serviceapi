@@ -92,5 +92,70 @@
                 </ul>
             </div>
         </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+        <script>
+        (function(){
+            // Initialize Firebase
+            const config = {
+                apiKey: "AIzaSyBoZVotZ8rq7wdiA6cLTuAHtS2A3OICkps",
+                authDomain: "meus-alertas.firebaseapp.com",
+                databaseURL: "https://meus-alertas.firebaseio.com",
+                storageBucket: "meus-alertas.appspot.com",
+                messagingSenderId: "747585815388"
+            };
+            firebase.initializeApp(config);
+            
+            // Autenticação
+            const auth = firebase.auth();
+            auth.onAuthStateChanged(firebaseUser => { // Evento que escuta as informações de autenticação
+                if (firebaseUser) {
+                    //console.table(firebaseUser);
+                } else {
+                    console.log("Not logged!");
+                }
+            });
+            
+            const user = "contato@alvesbruno.com";
+            const pass = "senhasenha";
+            
+            let login = auth.signInWithEmailAndPassword(user, pass);
+                login.then(firebaseUser => { console.log("Usuario Logado"); });
+                login.catch(e => { console.log(e.message); });
+                
+            auth.signOut();
+            
+            function writeNewPost(uid, username, picture, title, body) {
+
+              // Get a key for a new Post.
+              var newPostKey = firebase.database().ref().child('posts').push().key;
+              
+              // A post entry.
+              var postData = {
+                author: username,
+                uid: uid,
+                body: body,
+                title: title,
+                starCount: 0,
+                authorPic: picture,
+                key: newPostKey
+              };
+
+              // Write the new post's data simultaneously in the posts list and the user's post list.
+              var updates = {};
+              updates['/posts/' + newPostKey] = postData;
+              updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+              return firebase.database().ref().update(updates);
+            }
+            
+            writeNewPost(1, "bruno", "imagem.jpg", "Titulo do banco", "body do banco");
+            
+            //auth.createUserWithEmailAndPassword(user, pass);
+            
+            //auth.signInWithEmailAndPassword(email, password);   // Loga um usuário
+            //auth.createUserWithEmailAndPassword(email, pass);   // Cria um usuário e senha
+        })();
+        </script>
     </body>
 </html>
