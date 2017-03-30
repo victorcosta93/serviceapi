@@ -1,0 +1,7 @@
+body{
+    &.style-body {
+        @include linear-gradient(207deg,#654a86,#534292);
+        min-height: 100%;
+        margin-bottom: -170px;
+    }
+}

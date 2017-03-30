@@ -1,20 +1,27 @@
+// Carrega o Jquery
+window.$ = window.jQuery = require('jquery');
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+// jquery do Sass
+require('bootstrap-sass');
 
-require('./bootstrap');
+// Imports
+import React from 'react'
+import ReactDOM from 'react-dom';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+// Template
+import PublicAuthentication from './template/PublicAuthentication';
 
-Vue.component('example', require('./components/Example.vue'));
+const Index = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={PublicAuthentication}/>
+    </div>
+  </Router>
+)
 
-const app = new Vue({
-    el: '#app'
-});
+ReactDOM.render(<Index />, document.getElementById('app'));

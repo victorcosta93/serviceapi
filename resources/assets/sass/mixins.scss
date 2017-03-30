@@ -1,0 +1,111 @@
+/* Básico de Pseudo elementos -> include pseudo */
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+/* Proporção responsiva 19:6 -> include responsive-ratio(16,9); */
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}
+
+/* Placeholders ->
+    @include input-placeholder {
+        color: $grey;
+    }
+*/
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+
+/* Trunca um texto 250... -> include truncate(250); */
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Evita mostrar a seleção de texto -> include unselectable */
+@mixin unselectable {
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+/* Prefixos css -> prefix(background, color: red) */
+@mixin prefix($property, $parameters...) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
+    #{$prefix}#{$property}: $parameters;
+  }
+}
+
+/* Valida se a informação passada é uma direção */
+@function is-direction($value) {
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+
+  @return $is-keyword or $is-angle;
+}
+
+/* Converte a direção passada em informações textuais */
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}
+
+/* Prefixos css no valor -> prefix(background, color: red) */
+@mixin linear-gradient($direction, $color-stops...) {
+    // Direction has been omitted and happens to be a color-stop
+    @if is-direction($direction) == false {
+        $color-stops: $direction, $color-stops;
+        $direction: 180deg;
+    }
+    
+    $color-to: nth(nth($color-stops, 1), 1);
+    
+    background-color: $color-to;
+    background-image: -webkit-gradient(legacy-direction($direction), 0% 0%, 0% 100%, from($color-to), to($color-to));
+    background-image: -webkit-linear-gradient(legacy-direction($direction), $color-stops); 
+    background-image:    -moz-linear-gradient(legacy-direction($direction), $color-stops);
+    background-image:     -ms-linear-gradient(legacy-direction($direction), $color-stops);
+    background-image:      -o-linear-gradient(legacy-direction($direction), $color-stops);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$color-to', EndColorStr='$color-to')";
+  
+}
