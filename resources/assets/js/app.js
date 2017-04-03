@@ -16,12 +16,11 @@ import {
 // Template
 import PublicAuthentication from './template/PublicAuthentication';
 
+// Body Public
 const Index = () => (
   <Router>
-    <div>
-      <Route exact path="/" component={PublicAuthentication}/>
-    </div>
+    <Route path="/" component={PublicAuthentication}/>
   </Router>
 )
 
-ReactDOM.render(<Index />, document.getElementById('app'));
+ReactDOM.render(<Index />, document.getElementById('public-app'));

@@ -7,13 +7,17 @@ import {
 } from 'react-router-dom'
 
 // Componentes
-import AuthenticationForm from '../components/AuthenticationForm';
+import SignUpForm from '../components/SignUpForm';
+import SignInForm from '../components/SignInForm';
 
 const PublicAuthentication = () => (
   <Router>
-    <div>
-      <Route exact path="/" component={AuthenticationForm}/>
-      <Route exact path="/signin" component={AuthenticationForm}/>
+    <div className="container-fluid">
+        <div className="row">
+          <Route exact path="/" component={SignInForm}/>
+          <Route exact path="/signup" component={SignUpForm}/>
+          <Route exact path="/signin" component={SignInForm}/>
+        </div>
     </div>
   </Router>
 )
