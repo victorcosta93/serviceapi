@@ -7724,6 +7724,18 @@ body.public-style-body {
 .SignIn-style {
   margin-top: 20px;
   position: relative;
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .SignIn-style {
+    padding-top: 10px;
+  }
+}
+
+.SignIn-style img.logo {
+  margin: 0 auto;
+  display: block;
 }
 
 .SignIn-style .global {
@@ -7787,6 +7799,18 @@ body.public-style-body {
 .SignUp-style {
   margin-top: 20px;
   position: relative;
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .SignUp-style {
+    padding-top: 10px;
+  }
+}
+
+.SignUp-style img.logo {
+  margin: 0 auto;
+  display: block;
 }
 
 .SignUp-style .global {

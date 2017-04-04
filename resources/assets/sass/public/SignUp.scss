@@ -1,6 +1,16 @@
 .SignUp-style{
     margin-top: 20px;
     position: relative;
+    padding-top: 60px;
+    
+    @include mobile-landscape-and-below {
+        padding-top: 10px;
+    }
+    
+    img.logo{
+        margin: 0 auto;
+        display: block;
+    }
 
     .global{
         max-width: 430px;

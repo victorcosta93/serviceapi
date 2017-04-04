@@ -8,6 +8,7 @@ import {
 
 const SignUpForm = () => (
     <div className="SignUp-style col-md-4 col-md-offset-4">
+        <img className="logo" src="img/logo-90.png" />
         <div className="global">
             <h3 className="header">Informe seus dados</h3>
             <form>
