@@ -11,6 +11,21 @@ body{
     &.public-style-body {
         @include linear-gradient(207deg,#654a86,#534292);
     }
+    
+    .global{
+        margin-top: 20px;
+        position: relative;
+        padding-top: 60px;
+        
+        @include mobile-landscape-and-below {
+            padding-top: 0;
+        }
+        
+        img.logo{
+            margin: 0 auto;
+            display: block;
+        }
+    }
 }
 
 
