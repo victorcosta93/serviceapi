@@ -7853,3 +7853,59 @@ body .global img.logo {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #3f3f44;
+}
+
+body.private-style-body {
+  background-color: #654a86;
+  background-image: -webkit-gradient(-117deg, 0% 0%, 0% 100%, from(#654a86), to(#654a86));
+  background-image: -webkit-linear-gradient(-117deg, #654a86, #534292);
+  background-image: -o-linear-gradient(-117deg, #654a86, #534292);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$color-to', EndColorStr='$color-to')";
+}
+
+body.private-style-body .main-header {
+  overflow: hidden;
+  background-color: #333;
+  /* Change the link color to #111 (black) on hover */
+}
+
+body.private-style-body .main-header img {
+  height: 38px;
+  margin: 12px 16px;
+}
+
+body.private-style-body .main-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.private-style-body .main-header li {
+  float: right;
+}
+
+body.private-style-body .main-header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+body.private-style-body .main-header li a:hover {
+  background-color: #111;
+}
+
+body.private-style-body .main-header li.left {
+  float: left;
+}

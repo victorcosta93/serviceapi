@@ -16,12 +16,17 @@ Route::get('/', function () {
 });
 
 Route::get('/signin', function () {
-    return view('erro404');
+    return view('index');
 });
 
 Route::get('/signup', function () {
     return view('index');
 });
+
+Route::get('/private', function () {
+    return view('private');
+});
+
 
 // Rotas autenticadas
 Route::group(['middleware' => 'samologin', 'prefix' => 'private'], function () {

@@ -10,8 +10,8 @@
         
         <title>SAMO - Sistema Financeiro</title>        
     </head>
-    <body class="public-style-body">
-        <div id="public-app"></div>
-        <script type="text/javascript" src="js/public.js?{{time()}}"></script>
+    <body class="private-style-body">
+        <div id="private-app"></div>
+        <script type="text/javascript" src="js/private.js?{{time()}}"></script>
     </body>
 </html>
