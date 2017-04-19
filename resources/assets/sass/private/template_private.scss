@@ -48,4 +48,25 @@ body{
             float: left;
         }
     }
+    
+    &.private-style-body .main-nav{
+        width: 200px;
+        background: red;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 62px;
+    }
+    
+    &.private-style-body .main-global{
+        width: 100%;
+        background: blue;
+        margin: 0;
+        padding: 0;
+        min-height: 300px;
+        margin-left: 200px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
 }
