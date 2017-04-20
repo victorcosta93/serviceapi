@@ -7909,3 +7909,22 @@ body.private-style-body .main-header li a:hover {
 body.private-style-body .main-header li.left {
   float: left;
 }
+
+body.private-style-body .main-nav {
+  width: 200px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  top: 62px;
+}
+
+body.private-style-body .main-global {
+  width: 100%;
+  background: blue;
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+  margin-left: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
