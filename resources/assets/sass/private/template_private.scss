@@ -1,3 +1,5 @@
+$nav-bar-background : #333;
+
 html, body {
     height: 100%;
 }
@@ -13,39 +15,77 @@ body{
     }
     
     &.private-style-body .main-header {
-        overflow: hidden;
-        background-color: #333;
+        /*overflow: hidden;*/
+        background-color: $nav-bar-background;
+        height: 60px;
         
-        img {
+        img.logo {
+            position: absolute;
             height: 38px;
             margin: 12px 16px;
+            
+            @include tablet-landscape-and-below {
+                margin: 12px 0 12px -19px;
+                left: 50%;
+            }
         }
         
-        ul {
+        img.profile {
+            height: 30px;
+            margin: 0 16px;
+        }
+        
+        ul.profile-menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
-        }
+            position: relative;
+            
+            @include tablet-landscape-and-below {
+                width: 250px;
+                float: right;
+            }
 
-        li {
-            float: right;
-        }
+            li {
+                @include desktop-and-up {
+                    float: right;
+                }
+                background: $nav-bar-background;
+            }
 
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 20px 16px;
-            text-decoration: none;
-        }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
 
-        /* Change the link color to #111 (black) on hover */
-        li a:hover {
-            background-color: #111;
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: #111;
+            }
         }
         
-        li.left{
-            float: left;
+        ul.profile-sub-hidden, ul.profile-sub-show{
+            position: absolute;
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+            }
+        }
+        
+        ul.profile-sub-show{
+            display: block;
         }
     }
     
@@ -54,7 +94,7 @@ body{
         background: red;
         position: absolute;
         bottom: 0;
-        top: 62px;
+        top: 60px;
     }
     
     &.private-style-body .main-global{
@@ -63,7 +103,7 @@ body{
         margin: 0;
         padding: 0;
         min-height: 300px;
-        margin-left: 200px;
+        padding-left: 200px;
         box-sizing: border-box;
         overflow: hidden;
     }

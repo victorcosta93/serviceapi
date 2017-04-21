@@ -1432,7 +1432,6 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -3033,7 +3032,6 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
@@ -4026,7 +4024,6 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 
@@ -4054,11 +4051,8 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition-property: height, visibility;
   transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 
@@ -5720,7 +5714,6 @@ a.badge:hover, a.badge:focus {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 
@@ -5875,13 +5868,11 @@ a.thumbnail.active {
   text-align: center;
   background-color: #337ab7;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 .progress-striped .progress-bar,
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
@@ -5897,7 +5888,6 @@ a.thumbnail.active {
 }
 
 .progress-striped .progress-bar-success {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5906,7 +5896,6 @@ a.thumbnail.active {
 }
 
 .progress-striped .progress-bar-info {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5915,7 +5904,6 @@ a.thumbnail.active {
 }
 
 .progress-striped .progress-bar-warning {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5924,7 +5912,6 @@ a.thumbnail.active {
 }
 
 .progress-striped .progress-bar-danger {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -6728,7 +6715,6 @@ button.close {
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
@@ -7154,7 +7140,6 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 
@@ -7168,7 +7153,6 @@ button.close {
 
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
@@ -7248,7 +7232,6 @@ button.close {
 }
 
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -7257,7 +7240,6 @@ button.close {
 .carousel-control.right {
   left: auto;
   right: 0;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -7716,7 +7698,6 @@ body {
 body.public-style-body {
   background-color: #654a86;
   background-image: -webkit-gradient(-117deg, 0% 0%, 0% 100%, from(#654a86), to(#654a86));
-  background-image: -webkit-linear-gradient(-117deg, #654a86, #534292);
   background-image: -o-linear-gradient(-117deg, #654a86, #534292);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$color-to', EndColorStr='$color-to')";
 }
@@ -7868,33 +7849,81 @@ body {
 body.private-style-body {
   background-color: #654a86;
   background-image: -webkit-gradient(-117deg, 0% 0%, 0% 100%, from(#654a86), to(#654a86));
-  background-image: -webkit-linear-gradient(-117deg, #654a86, #534292);
   background-image: -o-linear-gradient(-117deg, #654a86, #534292);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$color-to', EndColorStr='$color-to')";
 }
 
 body.private-style-body .main-header {
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #333;
-  /* Change the link color to #111 (black) on hover */
+  height: 60px;
 }
 
-body.private-style-body .main-header img {
+body.private-style-body .main-header img.logo {
+  position: absolute;
   height: 38px;
   margin: 12px 16px;
 }
 
-body.private-style-body .main-header ul {
+@media only screen and (max-width: 1024px) {
+  body.private-style-body .main-header img.logo {
+    margin: 12px 0 12px -19px;
+    left: 50%;
+  }
+}
+
+body.private-style-body .main-header img.profile {
+  height: 30px;
+  margin: 0 16px;
+}
+
+body.private-style-body .main-header ul.profile-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  /* Change the link color to #111 (black) on hover */
 }
 
-body.private-style-body .main-header li {
-  float: right;
+@media only screen and (max-width: 1024px) {
+  body.private-style-body .main-header ul.profile-menu {
+    width: 250px;
+    float: right;
+  }
 }
 
-body.private-style-body .main-header li a {
+body.private-style-body .main-header ul.profile-menu li {
+  background: #333;
+}
+
+@media only screen and (min-width: 1025px) {
+  body.private-style-body .main-header ul.profile-menu li {
+    float: right;
+  }
+}
+
+body.private-style-body .main-header ul.profile-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+body.private-style-body .main-header ul.profile-menu li a:hover {
+  background-color: #111;
+}
+
+body.private-style-body .main-header ul.profile-sub-hidden, body.private-style-body .main-header ul.profile-sub-show {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body.private-style-body .main-header ul.profile-sub-hidden li a, body.private-style-body .main-header ul.profile-sub-show li a {
   display: block;
   color: white;
   text-align: center;
@@ -7902,12 +7931,8 @@ body.private-style-body .main-header li a {
   text-decoration: none;
 }
 
-body.private-style-body .main-header li a:hover {
-  background-color: #111;
-}
-
-body.private-style-body .main-header li.left {
-  float: left;
+body.private-style-body .main-header ul.profile-sub-show {
+  display: block;
 }
 
 body.private-style-body .main-nav {
@@ -7915,7 +7940,7 @@ body.private-style-body .main-nav {
   background: red;
   position: absolute;
   bottom: 0;
-  top: 62px;
+  top: 60px;
 }
 
 body.private-style-body .main-global {
@@ -7924,7 +7949,7 @@ body.private-style-body .main-global {
   margin: 0;
   padding: 0;
   min-height: 300px;
-  margin-left: 200px;
+  padding-left: 200px;
   box-sizing: border-box;
   overflow: hidden;
 }

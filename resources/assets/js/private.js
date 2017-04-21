@@ -3,6 +3,8 @@ window.$ = window.jQuery = require('jquery');
 
 // jquery do Sass
 require('bootstrap-sass');
+//require('tether');
+//require('bootstrap');
 
 // Imports
 import React from 'react'

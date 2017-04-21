@@ -10,10 +10,25 @@ import {
 //import DashBoard from '../components/DashBoard';
 //import ProfileAdm from '../components/ProfileAdm';
 
+const openProfileMenu = (e, elm) => {
+    e.preventDefault();
+    alert(elm);
+}
+
 class PrivateIndex extends React.Component {
   
   constructor(props) {
     super(props);
+    this.state = {isToggleOpen: false};
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+  
+   handleClick() {
+    this.setState(prevState => ({
+      isToggleOpen: !prevState.isToggleOpen
+    }));
   }
   
   render() {  
@@ -21,10 +36,17 @@ class PrivateIndex extends React.Component {
     <Router>
         <section>
             <header className="main-header">
-                <ul>
-                    <li className="left"><img className="logo" src="img/logo-90.png" /></li>
-                    <li><Link to="about.asp">About</Link></li>
-                    <li><Link to="/exit">Sair</Link></li>
+                <img className="logo" src="img/logo-90.png" />
+                <ul className="profile-menu">
+                    <li><Link to="#noOpen" onClick={this.handleClick}>
+                            <img src="/img/profile.jpg" className="img-circle profile" />
+                            Bruno Alves
+                        </Link>
+                        <ul className={(this.state.isToggleOpen ? 'profile-sub-show' : 'profile-sub-hidden')}>
+                            <li><Link to="about.asp">About</Link></li>
+                            <li><Link to="/exit">Sair</Link></li>
+                        </ul>
+                    </li>
                 </ul>
             </header>
             <nav className="main-nav">
@@ -36,7 +58,7 @@ class PrivateIndex extends React.Component {
                 </ul>
             </nav>
             <main className="main-global">
-                
+                <h1>Teste</h1>
             </main>
             <footer className="main-footer"></footer>
         </section>
