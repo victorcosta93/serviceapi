@@ -37871,16 +37871,26 @@ var PrivateIndex = function (_React$Component) {
         _this.state = { isToggleOpen: false };
 
         // This binding is necessary to make `this` work in the callback
-        _this.handleClick = _this.handleClick.bind(_this);
+        _this.handleToggle = _this.handleToggle.bind(_this);
+        _this.handleClose = _this.handleClose.bind(_this);
         return _this;
     }
 
     _createClass(PrivateIndex, [{
-        key: 'handleClick',
-        value: function handleClick() {
+        key: 'handleToggle',
+        value: function handleToggle() {
             this.setState(function (prevState) {
                 return {
                     isToggleOpen: !prevState.isToggleOpen
+                };
+            });
+        }
+    }, {
+        key: 'handleClose',
+        value: function handleClose() {
+            this.setState(function (prevState) {
+                return {
+                    isToggleOpen: false
                 };
             });
         }
@@ -37905,7 +37915,7 @@ var PrivateIndex = function (_React$Component) {
                                 null,
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                     __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-                                    { to: '#noOpen', onClick: this.handleClick },
+                                    { to: '#noOpen', onClick: this.handleToggle },
                                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/img/profile.jpg', className: 'img-circle profile' }),
                                     'Bruno Alves'
                                 ),
@@ -37925,8 +37935,8 @@ var PrivateIndex = function (_React$Component) {
                                         'li',
                                         null,
                                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                            __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-                                            { to: '/exit' },
+                                            'a',
+                                            { href: '/signin' },
                                             'Sair'
                                         )
                                     )
@@ -37936,7 +37946,7 @@ var PrivateIndex = function (_React$Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'nav',
-                        { className: 'main-nav' },
+                        { className: 'main-nav', onClick: this.handleClose },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'ul',
                             null,
@@ -37980,7 +37990,7 @@ var PrivateIndex = function (_React$Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'main',
-                        { className: 'main-global' },
+                        { className: 'main-global', onClick: this.handleClose },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'h1',
                             null,

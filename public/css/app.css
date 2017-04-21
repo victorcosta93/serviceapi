@@ -7844,6 +7844,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #3f3f44;
+  padding-top: 60px;
 }
 
 body.private-style-body {
@@ -7856,7 +7857,11 @@ body.private-style-body {
 body.private-style-body .main-header {
   /*overflow: hidden;*/
   background-color: #333;
+  position: absolute;
+  z-index: 200;
   height: 60px;
+  width: 100%;
+  top: 0;
 }
 
 body.private-style-body .main-header img.logo {
@@ -7865,7 +7870,7 @@ body.private-style-body .main-header img.logo {
   margin: 12px 16px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
   body.private-style-body .main-header img.logo {
     margin: 12px 0 12px -19px;
     left: 50%;
@@ -7882,14 +7887,9 @@ body.private-style-body .main-header ul.profile-menu {
   margin: 0;
   padding: 0;
   position: relative;
+  width: 200px;
+  float: right;
   /* Change the link color to #111 (black) on hover */
-}
-
-@media only screen and (max-width: 1024px) {
-  body.private-style-body .main-header ul.profile-menu {
-    width: 250px;
-    float: right;
-  }
 }
 
 body.private-style-body .main-header ul.profile-menu li {
@@ -7923,6 +7923,10 @@ body.private-style-body .main-header ul.profile-sub-hidden, body.private-style-b
   width: 100%;
 }
 
+body.private-style-body .main-header ul.profile-sub-hidden li, body.private-style-body .main-header ul.profile-sub-show li {
+  float: inherit;
+}
+
 body.private-style-body .main-header ul.profile-sub-hidden li a, body.private-style-body .main-header ul.profile-sub-show li a {
   display: block;
   color: white;
@@ -7937,6 +7941,7 @@ body.private-style-body .main-header ul.profile-sub-show {
 
 body.private-style-body .main-nav {
   width: 200px;
+  z-index: 100;
   background: red;
   position: absolute;
   bottom: 0;
