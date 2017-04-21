@@ -7856,7 +7856,7 @@ body.private-style-body {
 
 body.private-style-body .main-header {
   /*overflow: hidden;*/
-  background-color: #333;
+  background-color: #292c31;
   position: absolute;
   z-index: 200;
   height: 60px;
@@ -7893,7 +7893,7 @@ body.private-style-body .main-header ul.profile-menu {
 }
 
 body.private-style-body .main-header ul.profile-menu li {
-  background: #333;
+  background: #292c31;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -7942,10 +7942,73 @@ body.private-style-body .main-header ul.profile-sub-show {
 body.private-style-body .main-nav {
   width: 200px;
   z-index: 100;
-  background: red;
+  background: #333;
   position: absolute;
   bottom: 0;
   top: 60px;
+  width: 60px;
+}
+
+@media only screen and (min-width: 769px) {
+  body.private-style-body .main-nav {
+    width: 100px;
+  }
+}
+
+body.private-style-body .main-nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+body.private-style-body .main-nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #41444a;
+}
+
+body.private-style-body .main-nav ul li:hover {
+  border-left: 3px solid #654a86;
+}
+
+body.private-style-body .main-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body.private-style-body .main-nav a i {
+  margin: 5px 0px;
+  font-size: 20px;
+  -webkit-transition: .2s ease-in-out all;
+}
+
+@media only screen and (min-width: 769px) {
+  body.private-style-body .main-nav a i {
+    font-size: 26px;
+  }
+}
+
+body.private-style-body .main-nav li:hover a i {
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 769px) {
+  body.private-style-body .main-nav li:hover a i {
+    font-size: 28px;
+  }
+}
+
+body.private-style-body .main-nav a span {
+  display: block;
+  font-size: 8px;
+}
+
+@media only screen and (min-width: 769px) {
+  body.private-style-body .main-nav a span {
+    font-size: 14px;
+  }
 }
 
 body.private-style-body .main-global {

@@ -1,4 +1,5 @@
-$nav-bar-background : #333;
+$nav-bar-background : #292c31;
+$nav-background: #333;
 
 html, body {
     height: 100%;
@@ -98,10 +99,65 @@ body{
     &.private-style-body .main-nav{
         width: 200px;
         z-index: 100;
-        background: red;
+        background: $nav-background;
         position: absolute;
         bottom: 0;
         top: 60px;
+        width: 60px;
+            
+        @include tablet-landscape-and-up {
+            width: 100px;
+        }
+        
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+        
+        ul li{
+            list-style: none;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #41444a;
+        }
+        
+        ul li:hover{
+            border-left: 3px solid #654a86;
+        }
+        
+        ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        a i{
+            margin: 5px 0px;
+            font-size: 20px;
+            -webkit-transition: .2s ease-in-out all;
+            
+            @include tablet-landscape-and-up {
+                font-size: 26px;
+            }
+        }
+        
+        li:hover a i{
+            font-size: 22px;
+            
+            @include tablet-landscape-and-up {
+                font-size: 28px;
+            }
+        }
+        
+        a span{
+            display: block;
+            font-size: 8px;
+            
+            @include tablet-landscape-and-up {
+                font-size: 14px;
+            }
+        }
     }
     
     &.private-style-body .main-global{
