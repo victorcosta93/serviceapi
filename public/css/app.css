@@ -7948,6 +7948,8 @@ body.private-style-body .main-nav {
   padding-top: 60px;
   width: 60px;
   -webkit-transform: translateZ(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 @media only screen and (min-width: 769px) {
