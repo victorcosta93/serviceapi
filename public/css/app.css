@@ -7705,7 +7705,6 @@ body.public-style-body {
 body .global {
   margin-top: 20px;
   position: relative;
-  padding-top: 60px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -7857,7 +7856,7 @@ body.private-style-body {
 body.private-style-body .main-header {
   /*overflow: hidden;*/
   background-color: #292c31;
-  position: absolute;
+  position: fixed;
   z-index: 200;
   height: 60px;
   width: 100%;
@@ -7943,7 +7942,7 @@ body.private-style-body .main-nav {
   width: 200px;
   z-index: 100;
   background: #333;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   top: 60px;
   width: 60px;
@@ -8013,11 +8012,44 @@ body.private-style-body .main-nav a span {
 
 body.private-style-body .main-global {
   width: 100%;
-  background: blue;
   margin: 0;
-  padding: 0;
+  padding: 15px;
+  padding-left: 115px;
   min-height: 300px;
-  padding-left: 200px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+  body.private-style-body .main-global {
+    padding: 5px;
+    padding-left: 65px;
+  }
+}
+
+/**** Paginas Internas ****/
+.page-home .app {
+  background: #FFF;
+  min-height: 300px;
+  width: 32.333333%;
+  margin: 0 0.5% 10px 0.5%;
+  float: left;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  .page-home .app {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    float: initial;
+    min-height: initial;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .page-home .app {
+    width: 49%;
+    margin: 0 0.5% 10px 0.5%;
+  }
 }

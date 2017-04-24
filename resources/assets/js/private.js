@@ -6,6 +6,8 @@ require('bootstrap-sass');
 //require('tether');
 //require('bootstrap');
 
+// Class Javacsript
+
 // Imports
 import React from 'react'
 import ReactDOM from 'react-dom';

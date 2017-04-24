@@ -15,7 +15,6 @@ body{
     .global{
         margin-top: 20px;
         position: relative;
-        padding-top: 60px;
         
         @include mobile-landscape-and-below {
             padding-top: 0;

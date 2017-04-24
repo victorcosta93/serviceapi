@@ -19,7 +19,7 @@ body{
     &.private-style-body .main-header {
         /*overflow: hidden;*/
         background-color: $nav-bar-background;
-        position: absolute;
+        position: fixed;
         z-index: 200;
         height: 60px;
         width: 100%;
@@ -100,7 +100,7 @@ body{
         width: 200px;
         z-index: 100;
         background: $nav-background;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         top: 60px;
         width: 60px;
@@ -162,13 +162,20 @@ body{
     
     &.private-style-body .main-global{
         width: 100%;
-        background: blue;
         margin: 0;
-        padding: 0;
+        padding: 15px;
+        padding-left: 115px;
         min-height: 300px;
-        padding-left: 200px;
         box-sizing: border-box;
         overflow: hidden;
+        
+        @include mobile-landscape-and-below {
+            padding: 5px;
+            padding-left: 65px;
+        }
     }
     
 }
+
+/**** Paginas Internas ****/
+@import "./pag_index.scss";

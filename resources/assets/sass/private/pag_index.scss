@@ -1,0 +1,26 @@
+.page-home{
+    
+    .app{
+        background: #FFF;
+        min-height: 300px;
+        width: 32.333333%;
+        margin: 0 0.5% 10px 0.5%;
+        float: left;
+        padding: 5px;
+        
+        @include mobile-landscape-and-below {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+            float: initial;
+            min-height: initial;
+        }
+        
+        @include tablet-only {
+            width: 49%;
+            margin: 0 0.5% 10px 0.5%;
+        }
+    }
+
+}
+
