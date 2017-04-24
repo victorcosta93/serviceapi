@@ -7947,6 +7947,7 @@ body.private-style-body .main-nav {
   top: 0;
   padding-top: 60px;
   width: 60px;
+  -webkit-transform: translateZ(0);
 }
 
 @media only screen and (min-width: 769px) {
