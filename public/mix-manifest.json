@@ -1,5 +1,5 @@
 {
+  "/js/private.js": "/js/private.js",
   "/js/public.js": "/js/public.js",
-  "/css/app.css": "/css/app.css",
-  "/js/private.js": "/js/private.js"
+  "/css/app.css": "/css/app.css"
 }
