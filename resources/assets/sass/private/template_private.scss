@@ -100,7 +100,7 @@ body{
         width: 200px;
         z-index: 100;
         background: $nav-background;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         top: 0;
         padding-top: 60px;
@@ -180,6 +180,9 @@ body{
         box-sizing: border-box;
         overflow: auto;
         bottom: 0;
+        
+        position: absolute;
+        padding-top: 60px;
         
         @include mobile-landscape-and-below {
             padding: 5px;

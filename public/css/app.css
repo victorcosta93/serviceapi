@@ -7962,7 +7962,7 @@ body.private-style-body .main-nav {
   width: 200px;
   z-index: 100;
   background: #333;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   top: 0;
   padding-top: 60px;
@@ -8048,6 +8048,8 @@ body.private-style-body .main-global {
   box-sizing: border-box;
   overflow: auto;
   bottom: 0;
+  position: absolute;
+  padding-top: 60px;
 }
 
 @media only screen and (max-width: 640px) {
