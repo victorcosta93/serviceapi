@@ -8021,7 +8021,8 @@ body.private-style-body .main-global {
   padding-left: 115px;
   min-height: 300px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 640px) {
@@ -8047,7 +8048,7 @@ body.private-style-body .main-global {
     margin: 0;
     margin-bottom: 10px;
     float: initial;
-    min-height: initial;
+    /*min-height: initial;*/
   }
 }
 

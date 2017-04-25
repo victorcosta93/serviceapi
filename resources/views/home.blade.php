@@ -14,7 +14,7 @@
     <body class="private-style-body">
         
         <section>
-            <!--header class="main-header">
+            <header class="main-header">
                 <img class="logo" src="/img/logo-90.png" />
                 <ul class="profile-menu">
                     <li><a href="#noOpen">
@@ -27,7 +27,7 @@
                         </ul>
                     </li>
                 </ul>
-            </header-->
+            </header>
             
             <nav class="main-nav">
                 <ul>
@@ -57,7 +57,26 @@
                     </li>
                 </ul>
             </nav>
-    
+            
+            <main class="main-global">
+                
+                <div class="page-home">
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                  <div class="app">.col-md-6</div>
+                </div>
+                
+            </main>
+            
         </section>
         
     </body>

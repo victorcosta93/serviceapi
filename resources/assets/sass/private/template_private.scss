@@ -171,7 +171,8 @@ body{
         padding-left: 115px;
         min-height: 300px;
         box-sizing: border-box;
-        overflow: hidden;
+        overflow: auto;
+        bottom: 0;
         
         @include mobile-landscape-and-below {
             padding: 5px;
