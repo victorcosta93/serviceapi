@@ -8049,7 +8049,7 @@ body.private-style-body .main-global {
   overflow: auto;
   bottom: 0;
   position: absolute;
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 @media only screen and (max-width: 640px) {
