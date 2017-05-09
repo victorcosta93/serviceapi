@@ -7,17 +7,19 @@ import {
 } from 'react-router-dom'
 
 // Componentes
-//import DashBoard from '../components/DashBoard';
+import DashBoard from '../components/DashBoard';
 //import ProfileAdm from '../components/ProfileAdm';
 
 import MainHeader from '../components/MainHeader';
 import MainNav from '../components/MainNav';
 import MainFooter from '../components/MainFooter';
 
-
-var LineChart = require("react-chartjs-2").Line;
-var BarChart = require("react-chartjs-2").Bar;
-var NutChart = require("react-chartjs-2").Doughnut;
+// Finance
+import FinanceNew from '../components/finance/new';
+import FinanceDel from '../components/finance/del';
+import FinanceEdit from '../components/finance/edit';
+import FinanceList from '../components/finance/list';
+import FinanceTransfer from '../components/finance/transfer';
 
 class PrivateIndex extends React.Component {
   
@@ -25,24 +27,7 @@ class PrivateIndex extends React.Component {
     super(props);
   }
 
-  render() {
-    var chartData = {
-        labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
-        datasets: [
-            {
-                label: "Receitas",
-                borderColor: "rgba(157, 55, 37,1)",
-                data: [65, 59, 80, 81, 56, 55, 40],
-                fill: false,
-            },{
-                label: "Despesas",
-                borderColor: "rgba(75,192,192,1)",
-                data: [81, 59, 40, 59, 56, 65, 55],
-                fill: false,
-            }
-        ]
-    };
-      
+  render() {      
     return (
     <Router>
         <section>
@@ -50,20 +35,17 @@ class PrivateIndex extends React.Component {
             <MainNav />
             <main className="main-global">
                 
-                <div className="page-home">
-                  <div className="app"><LineChart data={chartData} legend="Ultimos 6 meses" height="180" option={{maintainAspectRatio: false}} /></div>
-                  <div className="app"><BarChart data={chartData} legend="Ultimos 6 meses" height="180" /></div>
-                  <div className="app"><NutChart data={chartData} legend="Ultimos 6 meses" height="180" /></div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                  <div className="app">.col-md-6</div>
-                </div>
+                <Link to="/finance">Listagem</Link><br/>
+                <Link to="/finance/new">_new</Link><br/>
+                <Link to="/finance/edit">edit</Link><br/>
+                <Link to="/finance/del">del</Link><br/>
+                <Link to="/finance/transfer">transfer</Link><br/>
+                
+                <Route exact path="/finance" component={FinanceList} />
+                <Route exact path="/finance/new" component={FinanceNew} />
+                <Route exact path="/finance/edit" component={FinanceEdit} />
+                <Route exact path="/finance/del" component={FinanceDel} />
+                <Route exact path="/finance/transfer" component={FinanceTransfer} />
                 
             </main>
             <MainFooter />

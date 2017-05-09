@@ -1,8 +1,8 @@
 // Carrega o Jquery
-window.$ = window.jQuery = require('jquery');
+//window.$ = window.jQuery = require('jquery');
 
 // jquery do Sass
-require('bootstrap-sass');
+//require('bootstrap-sass');
 //require('tether');
 //require('bootstrap');
 
