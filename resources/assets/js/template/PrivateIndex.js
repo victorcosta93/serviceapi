@@ -1,5 +1,6 @@
 // Imports
 import React from 'react'
+import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
     Route,
@@ -21,7 +22,7 @@ import FinanceEdit from '../components/finance/edit';
 import FinanceList from '../components/finance/list';
 import FinanceTransfer from '../components/finance/transfer';
 
-class PrivateIndex extends React.Component {
+export default class PrivateIndex extends React.Component {
   
   constructor(props) {
     super(props);
@@ -41,7 +42,7 @@ class PrivateIndex extends React.Component {
                 <Link to="/finance/del">del</Link><br/>
                 <Link to="/finance/transfer">transfer</Link><br/>
                 
-                <Route exact path="/finance" component={FinanceList} />
+                <Route exact path="/finance" component={DashBoard} />
                 <Route exact path="/finance/new" component={FinanceNew} />
                 <Route exact path="/finance/edit" component={FinanceEdit} />
                 <Route exact path="/finance/del" component={FinanceDel} />
@@ -54,5 +55,3 @@ class PrivateIndex extends React.Component {
     )
   }
 }
-
-export default PrivateIndex;

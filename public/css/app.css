@@ -7942,14 +7942,18 @@ body.private-style-body .main-nav {
   width: 200px;
   z-index: 100;
   background: #333;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   top: 0;
   padding-top: 60px;
   width: 60px;
+  height: 100%;
+  transform: translateZ(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
   -webkit-transform: translateZ(0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
 }
 
 @media only screen and (min-width: 769px) {
@@ -8016,6 +8020,7 @@ body.private-style-body .main-nav a span {
 
 body.private-style-body .main-global {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 15px;
   padding-left: 115px;
@@ -8023,6 +8028,8 @@ body.private-style-body .main-global {
   box-sizing: border-box;
   overflow: auto;
   bottom: 0;
+  position: absolute;
+  padding-top: 75px;
 }
 
 @media only screen and (max-width: 640px) {

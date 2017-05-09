@@ -32,6 +32,10 @@ Route::get('/home', function () {
 });
 
 
+
+
+
+
 // Rotas autenticadas
 Route::group(['middleware' => 'samologin', 'prefix' => 'private'], function () {
     Route::get('main', function ()    {
