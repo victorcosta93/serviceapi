@@ -6,8 +6,6 @@ import {
     Link
 } from 'react-router-dom'
 
-import navUserInfo from '../functions/navUserInfo';
-
 class SignUpForm extends React.Component {
   
   constructor(props) {
@@ -34,7 +32,7 @@ class SignUpForm extends React.Component {
             <div className="form-group">
                 <label className="sr-only" htmlFor="user">E-mail</label>
                 <i className="glyphicon glyphicon-user"></i>
-                <input type="text" className="form-control" id="user" name="user" placeholder="E-mail" defaultValue={navUserInfo()} />
+                <input type="text" className="form-control" id="user" name="user" placeholder="E-mail" />
             </div>
             
             <div className="form-group">

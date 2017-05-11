@@ -1,13 +1,3 @@
-// Carrega o Jquery
-//window.$ = window.jQuery = require('jquery');
-
-// jquery do Sass
-//require('bootstrap-sass');
-//require('tether');
-//require('bootstrap');
-
-// Class Javacsript
-
 // Imports
 import React from 'react'
 import ReactDOM from 'react-dom';
@@ -17,14 +7,37 @@ import {
     Link
 } from 'react-router-dom'
 
-// Template
-import PrivateIndex from './template/PrivateIndex';
+// Componentes do template
+import MainHeader from './template/private/MainHeader';
+import MainNav from './template/private/MainNav';
+import MainFooter from './template/private/MainFooter';
 
-// Body Public
-const Index = () => (
-  <Router>
-    <Route path="/private" component={PrivateIndex} />
-  </Router>
-)
+// Lista de apps
+import AppSystem from './apps/system/system';
+import AppFinance from './apps/finance/finance';
 
-ReactDOM.render(<Index />, document.getElementById('private-app'));
+export default class PrivateIndex extends React.Component {
+  
+  constructor(props) {
+    super(props);
+  }
+
+  render() {      
+    return (
+    <Router>
+        <section>
+            <MainHeader />
+            <MainNav />
+            <main className="main-global">
+                <Route path="/finance" component={AppFinance} />
+                <Route component={AppSystem} />
+            </main>
+            <MainFooter />
+        </section>
+    </Router>
+    )
+  }
+}
+
+
+ReactDOM.render(<PrivateIndex />, document.getElementById('private-app'));
