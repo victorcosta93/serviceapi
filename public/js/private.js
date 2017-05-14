@@ -25380,7 +25380,7 @@ var AppFinance = function (_React$Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { exact: true, path: '/finance', render: function render() {
                         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             __WEBPACK_IMPORTED_MODULE_8__components_app__["a" /* default */],
-                            { name: "Movimentações financeiras" },
+                            { name: "Movimentações" },
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__list__["a" /* default */], null)
                         );
                     } }),
@@ -25485,6 +25485,46 @@ var FinanceList = function (_React$Component) {
                         "p",
                         null,
                         "Caixa Econ\xF4mica (P)  Conta Poupan\xE7a"
+                    )
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "row ferramenta" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-3 col-sm-6 col-xs-12" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "btn-group  btn-group-justified", role: "group" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "#", className: "btn btn-default", role: "button" },
+                                "Transfer\xEAncia"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "#", className: "btn btn-default", role: "button" },
+                                "Movimenta\xE7\xE3o"
+                            )
+                        )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        "div",
+                        { className: "col-md-6 col-md-offset-3 col-sm-6 hidden-xs" },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            "div",
+                            { className: "btn-group  btn-group-justified", role: "group" },
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "#", className: "btn btn-default", role: "button" },
+                                "Categorias"
+                            ),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                "a",
+                                { href: "#", className: "btn btn-default", role: "button" },
+                                "Contas"
+                            )
+                        )
                     )
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -25694,7 +25734,7 @@ var FinanceList = function (_React$Component) {
                         )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "tfooter",
+                        "tfoot",
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
@@ -25708,7 +25748,7 @@ var FinanceList = function (_React$Component) {
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "price" },
                             "R$ 250.500,11"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

@@ -20,7 +20,22 @@ export default class FinanceList extends React.Component {
             <div className="Next">Mar</div>
             <p>Caixa Econômica (P) 	Conta Poupança</p>
         </div>
-    
+        
+        <div className="row ferramenta">
+            <div className="col-md-3 col-sm-6 col-xs-12">
+                <div className="btn-group  btn-group-justified" role="group">
+                  <a href="#" className="btn btn-default" role="button">Transferência</a>
+                  <a href="#" className="btn btn-default" role="button">Movimentação</a>
+                </div>
+            </div>
+            
+            <div className="col-md-6 col-md-offset-3 col-sm-6 hidden-xs">
+                <div className="btn-group  btn-group-justified" role="group">
+                  <a href="#" className="btn btn-default" role="button">Categorias</a>
+                  <a href="#" className="btn btn-default" role="button">Contas</a>
+                </div>
+            </div>
+        </div>
     
       <table className="table table-striped table-condesend finance-table">
         <thead>
@@ -62,12 +77,12 @@ export default class FinanceList extends React.Component {
                 <td className="no-mobile">Editar Excluir</td>
             </tr>
         </tbody>
-        <tfooter>
+        <tfoot>
             <th className="no-mobile">&nbsp;</th>
             <th>Total:</th>
-            <th>R$ 250.500,11</th>
+            <th className="price">R$ 250.500,11</th>
             <th className="no-mobile">&nbsp;</th>
-        </tfooter>
+        </tfoot>
       
       </table>
       

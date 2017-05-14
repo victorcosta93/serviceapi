@@ -27,7 +27,7 @@ export default class AppFinance extends React.Component {
     <div className="finance-global">
     
         <Route exact path="/finance" render={() => (
-            <AppSystem name={"Movimentações financeiras"}>
+            <AppSystem name={"Movimentações"}>
                 <FinanceList />
             </AppSystem>
         )} />

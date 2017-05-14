@@ -48,6 +48,7 @@ body{
             position: relative;
             width: 200px;
             float: right;
+            margin-right: 5px;
 
             li {
                 @include desktop-and-up {

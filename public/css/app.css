@@ -7888,6 +7888,7 @@ body.private-style-body .main-header ul.profile-menu {
   position: relative;
   width: 200px;
   float: right;
+  margin-right: 5px;
   /* Change the link color to #111 (black) on hover */
 }
 
@@ -8171,7 +8172,7 @@ body.private-style-body .private-app .private-appBody {
   .finance-global .finance-table {
     font-size: 12px;
   }
-  .finance-global .finance-table thead, .finance-global .finance-table .no-mobile, .finance-global .finance-table tfooter {
+  .finance-global .finance-table thead, .finance-global .finance-table .no-mobile, .finance-global .finance-table tfoot {
     display: none;
   }
   .finance-global .finance-table .price {
@@ -8259,4 +8260,8 @@ body.private-style-body .private-app .private-appBody {
     text-align: right;
     margin-bottom: 5px;
   }
+}
+
+.finance-global .ferramenta {
+  margin-bottom: 15px;
 }
