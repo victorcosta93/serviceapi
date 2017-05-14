@@ -22,7 +22,7 @@ export default class AppSystem extends React.Component {
                 <li><Link to="/finance/edit"><i className="glyphicon glyphicon-certificate" />Categorias</Link></li>
                 <li><Link to="/finance/del"><i className="glyphicon glyphicon-object-align-bottom" />Gráficos</Link></li>
                 <li><Link to="/finance/transfer"><i className="glyphicon glyphicon-tasks" />Saldos</Link></li>
-                <li><i className="glyphicon glyphicon-saved" />Metas</li>
+                <li><Link to="/finance/transfer"><i className="glyphicon glyphicon-saved" />Metas</Link></li>
             </ul>
         </nav>
         <div className="private-appBar">

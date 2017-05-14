@@ -25206,7 +25206,7 @@ var PrivateIndex = function (_React$Component) {
                         'main',
                         { className: 'main-global' },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '/finance', component: __WEBPACK_IMPORTED_MODULE_7__apps_finance_finance__["a" /* default */] }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { component: __WEBPACK_IMPORTED_MODULE_6__apps_system_system__["a" /* default */] })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '*', component: __WEBPACK_IMPORTED_MODULE_6__apps_system_system__["a" /* default */] })
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__template_private_MainFooter__["a" /* default */], null)
                 )
@@ -25861,8 +25861,12 @@ var AppSystem = function (_React$Component) {
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'li',
                             null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-saved' }),
-                            'Metas'
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
+                                { to: '/finance/transfer' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-saved' }),
+                                'Metas'
+                            )
                         )
                     )
                 ),

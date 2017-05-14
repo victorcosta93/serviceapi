@@ -30,7 +30,7 @@ export default class PrivateIndex extends React.Component {
             <MainNav />
             <main className="main-global">
                 <Route path="/finance" component={AppFinance} />
-                <Route component={AppSystem} />
+                <Route path="*" component={AppSystem} />
             </main>
             <MainFooter />
         </section>
