@@ -1013,7 +1013,7 @@ module.exports = { debugTool: debugTool };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__StaticRouter__ = __webpack_require__(200);
 /* unused harmony reexport StaticRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Switch__ = __webpack_require__(201);
-/* unused harmony reexport Switch */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_6__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__matchPath__ = __webpack_require__(58);
 /* unused harmony reexport matchPath */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__withRouter__ = __webpack_require__(202);
@@ -3495,7 +3495,7 @@ module.exports = SyntheticUIEvent;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(193);
 /* unused harmony reexport StaticRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(194);
-/* unused harmony reexport Switch */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(195);
 /* unused harmony reexport matchPath */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(196);
@@ -22282,7 +22282,7 @@ NavLink.defaultProps = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(10);
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["c"]; });
 
 
 /***/ }),
@@ -22795,7 +22795,7 @@ Switch.propTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Switch);
+/* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
 /* 202 */
@@ -25205,8 +25205,12 @@ var PrivateIndex = function (_React$Component) {
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'main',
                         { className: 'main-global' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '/finance', component: __WEBPACK_IMPORTED_MODULE_7__apps_finance_finance__["a" /* default */] }),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '*', component: __WEBPACK_IMPORTED_MODULE_6__apps_system_system__["a" /* default */] })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["d" /* Switch */],
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '/finance', component: __WEBPACK_IMPORTED_MODULE_7__apps_finance_finance__["a" /* default */] }),
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], { path: '*', component: __WEBPACK_IMPORTED_MODULE_6__apps_system_system__["a" /* default */] })
+                        )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__template_private_MainFooter__["a" /* default */], null)
                 )
@@ -25492,7 +25496,7 @@ var FinanceList = function (_React$Component) {
                     { className: "row ferramenta" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "div",
-                        { className: "col-md-3 col-sm-6 col-xs-12" },
+                        { className: "col-md-4 col-sm-6 col-xs-12" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
                             { className: "btn-group  btn-group-justified", role: "group" },
@@ -25510,7 +25514,7 @@ var FinanceList = function (_React$Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "div",
-                        { className: "col-md-6 col-md-offset-3 col-sm-6 hidden-xs" },
+                        { className: "col-md-4 col-md-offset-4 col-sm-6 hidden-xs" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "div",
                             { className: "btn-group  btn-group-justified", role: "group" },
@@ -25535,22 +25539,22 @@ var FinanceList = function (_React$Component) {
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "colunn1" },
                             "\xA0"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "colunn2" },
                             "Movimenta\xE7\xE3o"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "colunn3" },
                             "Valor"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "colunn4" },
                             "A\xE7\xE3o"
                         )
                     ),
@@ -25588,7 +25592,7 @@ var FinanceList = function (_React$Component) {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "td",
-                                { className: "no-mobile" },
+                                { className: "no-mobile line4" },
                                 "Editar Excluir"
                             )
                         ),
@@ -25623,7 +25627,7 @@ var FinanceList = function (_React$Component) {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "td",
-                                { className: "no-mobile" },
+                                { className: "no-mobile line4" },
                                 "Editar Excluir"
                             )
                         ),
@@ -25658,7 +25662,7 @@ var FinanceList = function (_React$Component) {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "td",
-                                { className: "no-mobile" },
+                                { className: "no-mobile line4" },
                                 "Editar Excluir"
                             )
                         ),
@@ -25693,7 +25697,7 @@ var FinanceList = function (_React$Component) {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "td",
-                                { className: "no-mobile" },
+                                { className: "no-mobile line4" },
                                 "Editar Excluir"
                             )
                         ),
@@ -25728,7 +25732,7 @@ var FinanceList = function (_React$Component) {
                             ),
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 "td",
-                                { className: "no-mobile" },
+                                { className: "no-mobile line4" },
                                 "Editar Excluir"
                             )
                         )
@@ -25743,7 +25747,7 @@ var FinanceList = function (_React$Component) {
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "th",
-                            null,
+                            { className: "footer4" },
                             "Total:"
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -25942,11 +25946,16 @@ var AppSystem = function (_React$Component) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'system-global' },
+        { className: 'system-ops' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h1',
           null,
-          'Systema'
+          'Ops... erro 404'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'A p\xE1gina requerida n\xE3o existe no sistema'
         )
       );
     }
@@ -26013,26 +26022,6 @@ var AppSystem = function (_React$Component) {
                             null,
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                                 __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-                                { to: '/finance/new' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-credit-card' }),
-                                'Contas'
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-                                { to: '/finance/edit' },
-                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-certificate' }),
-                                'Categorias'
-                            )
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'li',
-                            null,
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
                                 { to: '/finance/del' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-object-align-bottom' }),
                                 'Gr\xE1ficos'
@@ -26056,6 +26045,26 @@ var AppSystem = function (_React$Component) {
                                 { to: '/finance/transfer' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-saved' }),
                                 'Metas'
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
+                                { to: '/finance/edit' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-certificate' }),
+                                'Categorias'
+                            )
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'li',
+                            null,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
+                                { to: '/finance/new' },
+                                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'glyphicon glyphicon-credit-card' }),
+                                'Contas'
                             )
                         )
                     )

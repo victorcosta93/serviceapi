@@ -22,14 +22,14 @@ export default class FinanceList extends React.Component {
         </div>
         
         <div className="row ferramenta">
-            <div className="col-md-3 col-sm-6 col-xs-12">
+            <div className="col-md-4 col-sm-6 col-xs-12">
                 <div className="btn-group  btn-group-justified" role="group">
                   <a href="#" className="btn btn-default" role="button">Transferência</a>
                   <a href="#" className="btn btn-default" role="button">Movimentação</a>
                 </div>
             </div>
             
-            <div className="col-md-6 col-md-offset-3 col-sm-6 hidden-xs">
+            <div className="col-md-4 col-md-offset-4 col-sm-6 hidden-xs">
                 <div className="btn-group  btn-group-justified" role="group">
                   <a href="#" className="btn btn-default" role="button">Categorias</a>
                   <a href="#" className="btn btn-default" role="button">Contas</a>
@@ -39,10 +39,10 @@ export default class FinanceList extends React.Component {
     
       <table className="table table-striped table-condesend finance-table">
         <thead>
-            <th>&nbsp;</th>
-            <th>Movimentação</th>
-            <th>Valor</th>
-            <th>Ação</th>
+            <th className="colunn1">&nbsp;</th>
+            <th className="colunn2">Movimentação</th>
+            <th className="colunn3">Valor</th>
+            <th className="colunn4">Ação</th>
         </thead>
         
         <tbody>
@@ -50,36 +50,36 @@ export default class FinanceList extends React.Component {
                 <td className="no-mobile"><input type="checkbox" /></td>
                 <td><i className="glyphicon glyphicon-bookmark" /> Contas de casa <span>Alimento</span></td>
                 <td className="price">R$ 250.500,11<span>Pago</span></td>
-                <td className="no-mobile">Editar Excluir</td>
+                <td className="no-mobile line4">Editar Excluir</td>
             </tr>
             <tr>
                 <td className="no-mobile"><input type="checkbox" /></td>
                 <td><i className="glyphicon glyphicon-bookmark" /> Contas de casa <span>Alimento</span></td>
                 <td className="price">R$ 250.500,11<span>Pago</span></td>
-                <td className="no-mobile">Editar Excluir</td>
+                <td className="no-mobile line4">Editar Excluir</td>
             </tr>
             <tr>
                 <td className="no-mobile"><input type="checkbox" /></td>
                 <td><i className="glyphicon glyphicon-bookmark" /> Contas de casa <span>Alimento</span></td>
                 <td className="price">R$ 250.500,11<span>Pago</span></td>
-                <td className="no-mobile">Editar Excluir</td>
+                <td className="no-mobile line4">Editar Excluir</td>
             </tr>
             <tr>
                 <td className="no-mobile"><input type="checkbox" /></td>
                 <td><i className="glyphicon glyphicon-bookmark" /> Contas de casa <span>Alimento</span></td>
                 <td className="price">R$ 250.500,11<span>Pago</span></td>
-                <td className="no-mobile">Editar Excluir</td>
+                <td className="no-mobile line4">Editar Excluir</td>
             </tr>
             <tr>
                 <td className="no-mobile"><input type="checkbox" /></td>
                 <td><i className="glyphicon glyphicon-bookmark" /> Contas de casa <span>Alimento</span></td>
                 <td className="price">R$ 250.500,11<span>Pago</span></td>
-                <td className="no-mobile">Editar Excluir</td>
+                <td className="no-mobile line4">Editar Excluir</td>
             </tr>
         </tbody>
         <tfoot>
             <th className="no-mobile">&nbsp;</th>
-            <th>Total:</th>
+            <th className="footer4">Total:</th>
             <th className="price">R$ 250.500,11</th>
             <th className="no-mobile">&nbsp;</th>
         </tfoot>

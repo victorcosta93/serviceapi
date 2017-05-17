@@ -17,9 +17,10 @@ export default class AppSystem extends React.Component {
 
   render() {
     return (
-    <div className="system-global">
+    <div className="system-ops">
         
-        <h1>Systema</h1>
+        <h1>Ops... erro 404</h1>
+        <p>A página requerida não existe no sistema</p>
         
     </div>
     )

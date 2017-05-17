@@ -1,0 +1,143 @@
+.finance-global{
+    
+    .finance-table{
+    
+        .colunn1{
+            width: 40px;
+        }
+        
+        .colunn3{
+            width: 150px;
+            text-align: right;
+            padding-right: 20px;
+        }
+        
+        .colunn4{
+            width: 150px;
+            text-align: center;
+        }
+        
+        .line4{
+            text-align: center;
+        }
+        
+        .footer4{
+            text-align: right;
+        }
+    
+        .price{
+            text-align: right;
+        }
+        
+        span{
+           display: none;
+        }
+        
+        @include mobile-landscape-and-below {
+            font-size: 12px;
+               
+            & thead, & .no-mobile, & tfoot {
+                display: none;
+            }
+            
+            .price{
+                font-size: 18px;
+            }
+            
+            span{
+               display: block;
+               color: #CCC;
+               font-size: 10px;
+            }
+        }
+    
+    }
+
+    
+    .saldo-mobile{
+        
+        display: none;
+        text-align: center;
+        margin-bottom: 15px;
+        
+        .Prev, .Atual, .Next{
+            float: left;
+        }
+        
+        .Prev, .Next{
+            width: 20%;
+            float: left;
+            padding-top: 15px;
+            height: 45px;
+            font-weight: bold;
+        }
+        
+        .Atual {
+            
+            width: 60%;
+        
+            span{
+                display: block;
+                color: #CCC;
+                font-size: 12px;
+                height: 15px;
+            }
+            
+            h1{
+                font-weight: bold;
+                font-size: 20px;
+                margin:5px 0;
+            }
+        }
+            
+        p{
+            clear: both;
+            display: block;
+            font-size: 12px;
+        }
+    
+        @include mobile-landscape-and-below {
+            display: block;
+            
+        }
+    }
+    
+    
+    .descritivo-mobile{
+        
+        display: none;
+        margin-bottom: 15px;
+        border-top: 1px solid #ddd;
+        
+        & dl::after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+    
+        @include mobile-landscape-and-below {
+            display: block;
+            
+            
+            dt{
+                width: 40%;
+                float: left;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+            
+            dd{
+                width: 60%;
+                float: right;
+                text-align: right;
+                margin-bottom: 5px;
+            }
+            
+        }
+    }
+    
+    .ferramenta{
+        margin-bottom: 15px;
+    }
+}
+

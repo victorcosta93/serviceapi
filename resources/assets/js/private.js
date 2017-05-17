@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    Switch
 } from 'react-router-dom'
 
 // Componentes do template
@@ -29,8 +30,10 @@ export default class PrivateIndex extends React.Component {
             <MainHeader />
             <MainNav />
             <main className="main-global">
+                <Switch>
                 <Route path="/finance" component={AppFinance} />
                 <Route path="*" component={AppSystem} />
+                </Switch>
             </main>
             <MainFooter />
         </section>

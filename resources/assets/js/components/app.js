@@ -18,11 +18,11 @@ export default class AppSystem extends React.Component {
         <nav className="private-appNav">
             <ul>
                 <li><Link to="/finance"><i className="glyphicon glyphicon-transfer" />Movimentações</Link></li>
-                <li><Link to="/finance/new"><i className="glyphicon glyphicon-credit-card" />Contas</Link></li>
-                <li><Link to="/finance/edit"><i className="glyphicon glyphicon-certificate" />Categorias</Link></li>
                 <li><Link to="/finance/del"><i className="glyphicon glyphicon-object-align-bottom" />Gráficos</Link></li>
                 <li><Link to="/finance/transfer"><i className="glyphicon glyphicon-tasks" />Saldos</Link></li>
                 <li><Link to="/finance/transfer"><i className="glyphicon glyphicon-saved" />Metas</Link></li>
+                <li><Link to="/finance/edit"><i className="glyphicon glyphicon-certificate" />Categorias</Link></li>
+                <li><Link to="/finance/new"><i className="glyphicon glyphicon-credit-card" />Contas</Link></li>
             </ul>
         </nav>
         <div className="private-appBar">
