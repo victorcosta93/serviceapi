@@ -1,4 +1,4 @@
-$nav-bar-background : #292c31;
+$nav-bar-background: #292c31;
 $nav-background: #414141;
 
 html, body {
@@ -6,7 +6,7 @@ html, body {
 }
 
 body{
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     color: #3f3f44;
@@ -15,8 +15,6 @@ body{
     &.private-style-body {
         @include linear-gradient(207deg,#654a86,#534292);
     }
-    
-    
     
     &.private-style-body .main-header {
         /*overflow: hidden;*/
@@ -74,7 +72,6 @@ body{
         }
         
         ul.profile-sub-hidden, ul.profile-sub-show{
-            position: absolute;
             display: none;
             list-style-type: none;
             margin: 0;
@@ -280,7 +277,7 @@ body{
                 
                 @include tablet-landscape-and-up {
                     text-align: left;
-                    padding-left: 10px;
+                    padding: 10px;
                 }
             }
         }
@@ -328,3 +325,4 @@ body{
 /**** Paginas Internas ****/
 @import "./pag_index.scss";
 @import "./pag_finance.scss";
+@import "./pag_finance.goals.scss";

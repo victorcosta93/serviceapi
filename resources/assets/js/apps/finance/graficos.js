@@ -1,7 +1,7 @@
 // Imports
 import React from 'react'
 
-export default class FinanceDel extends React.Component {
+export default class FinanceGraficos extends React.Component {
   
   constructor(props) {
     super(props);
@@ -10,7 +10,7 @@ export default class FinanceDel extends React.Component {
   render() {    
     return (
     <div className="page-home">
-      <h1>FinanceDel</h1>
+      <h1>FinanceGraficos</h1>
     </div>
     )
   }

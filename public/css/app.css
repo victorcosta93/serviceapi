@@ -7915,7 +7915,6 @@ body.private-style-body .main-header ul.profile-menu li a:hover {
 }
 
 body.private-style-body .main-header ul.profile-sub-hidden, body.private-style-body .main-header ul.profile-sub-show {
-  position: absolute;
   display: none;
   list-style-type: none;
   margin: 0;
@@ -8136,7 +8135,7 @@ body.private-style-body .private-app .private-appBar h1 {
 @media only screen and (min-width: 769px) {
   body.private-style-body .private-app .private-appBar h1 {
     text-align: left;
-    padding-left: 10px;
+    padding: 10px;
   }
 }
 
@@ -8207,35 +8206,49 @@ body.private-style-body .system-ops p {
   }
 }
 
-.finance-global .finance-table .colunn1 {
+.finance-global .finance-table .header1,
+.finance-global .finance-table .header2,
+.finance-global .finance-table .header3,
+.finance-global .finance-table .header4 {
+  height: 40px;
+}
+
+.finance-global .finance-table .header1 {
   width: 40px;
 }
 
-.finance-global .finance-table .colunn3 {
+.finance-global .finance-table .header3 {
   width: 150px;
   text-align: right;
   padding-right: 20px;
 }
 
-.finance-global .finance-table .colunn4 {
+.finance-global .finance-table .header4 {
   width: 150px;
   text-align: center;
+}
+
+.finance-global .finance-table .line1 {
+  text-align: center;
+}
+
+.finance-global .finance-table .line2 span, .finance-global .finance-table .line3 span {
+  display: none;
 }
 
 .finance-global .finance-table .line4 {
   text-align: center;
 }
 
+.finance-global .finance-table .line3, .finance-global .finance-table .footer2, .finance-global .finance-table .footer3 {
+  text-align: right;
+}
+
+.finance-global .finance-table .footer1,
+.finance-global .finance-table .footer2,
+.finance-global .finance-table .footer3,
 .finance-global .finance-table .footer4 {
-  text-align: right;
-}
-
-.finance-global .finance-table .price {
-  text-align: right;
-}
-
-.finance-global .finance-table span {
-  display: none;
+  height: 40px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -8245,10 +8258,10 @@ body.private-style-body .system-ops p {
   .finance-global .finance-table thead, .finance-global .finance-table .no-mobile, .finance-global .finance-table tfoot {
     display: none;
   }
-  .finance-global .finance-table .price {
+  .finance-global .finance-table .line3 {
     font-size: 18px;
   }
-  .finance-global .finance-table span {
+  .finance-global .finance-table .line2 span, .finance-global .finance-table .line3 span {
     display: block;
     color: #CCC;
     font-size: 10px;

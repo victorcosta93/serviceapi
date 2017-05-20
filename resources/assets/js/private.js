@@ -8,6 +8,10 @@ import {
     Switch
 } from 'react-router-dom'
 
+// Bootstrap
+window.$ = window.jQuery = require('jquery');
+require('bootstrap-sass');
+
 // Componentes do template
 import MainHeader from './template/private/MainHeader';
 import MainNav from './template/private/MainNav';

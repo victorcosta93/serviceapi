@@ -27,6 +27,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/finance/{slug}', function($slug){
+    return view('private');
+})->where('slug', '([A-z\d-\/_.]+)?');
+
 Route::get('/{slug}', function($slug){
     return view('private');
 })->where('slug', '([A-z\d-\/_.]+)?');
