@@ -22,7 +22,7 @@ class Samo7Group extends Migration
             // Básico
             $table->string('group_name');
             $table->dateTime('group_date_add');
-            $table->dateTime('group_date_upt');
+            $table->dateTime('group_date_upt')->nullable();
             
             // Chaves estrangeiras
             

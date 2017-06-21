@@ -28,7 +28,7 @@ class Samo7User extends Migration
             $table->string('user_photo', 255)->nullable();
             $table->string('user_cpf', 11)->nullable();
             $table->dateTime('user_date_add');
-            $table->dateTime('user_date_upt');
+            $table->dateTime('user_date_upt')->nullable();
             $table->dateTime('user_date_dlt')->nullable();
             $table->dateTime('user_date_login')->nullable();
             

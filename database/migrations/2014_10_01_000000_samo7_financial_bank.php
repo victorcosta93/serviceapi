@@ -37,7 +37,7 @@ class Samo7FinancialBank extends Migration
             $table->bigInteger('bank_warning')->nullable();
             
             $table->dateTime('bank_date_add');
-            $table->dateTime('bank_date_upt');
+            $table->dateTime('bank_date_upt')->nullable();
             
             // Chaves estrangeiras
             $table->unsignedInteger('bank_user_uid');
@@ -47,14 +47,14 @@ class Samo7FinancialBank extends Migration
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
                     
-            $table->unsignedInteger('bank_account_uid');
+            $table->unsignedInteger('bank_account_uid')->nullable();
             $table->foreign('bank_account_uid')
                     ->references('account_uid')
                     ->on('samo7_financial_account')
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
                     
-            $table->unsignedInteger('bank_category_uid');
+            $table->unsignedInteger('bank_category_uid')->nullable();
             $table->foreign('bank_category_uid')
                     ->references('category_uid')
                     ->on('samo7_financial_category')
